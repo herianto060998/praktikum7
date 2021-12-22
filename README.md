@@ -143,22 +143,6 @@ System akan menjalankan fitur ini ketika user mengetikkan perintah 1 pada piliha
 ![gambar3](gmbrss/ss3.png.png)
 
 ```pyhton
-def tambah():
-        print("Tambah Data")
-        nama = input("Nama\t\t: ")
-        nim = int(input("NIM\t\t: "))
-        tugas = int(input("Nilai Tugas\t: "))
-        uts = int(input("Nilai UTS\t: "))
-        uas = int(input("Nilai UAS\t: "))
-        nilaiakhir = (tugas * 0.3 + uts * 0.35 + uas * 0.35)
-        data[nama] = nim, tugas, uts, uas, nilaiakhir
-```
-- Tambah Data<p>
-System akan menjalankan fitur ini ketika user mengetikkan perintah 2 pada pilihan Pilih Menu (1-2-3-4-0) dan kita bisa menambahkan data pada program Inilah tampilan fitur Tambah Data :<p>
-
-![gambar4](gmbrss/ss4.png.png)
-
-``` pyhton
 def tampilkan():
         if data.items():
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| Daftar Nilai |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -176,6 +160,23 @@ def tampilkan():
             print("_______________________________________________________________________________________")
             print("|      |               |             Tidak Ada Data         |         |                |")
             print("____________________________________________________________________________________________")
+```
+
+- Tambah Data<p>
+System akan menjalankan fitur ini ketika user mengetikkan perintah 2 pada pilihan Pilih Menu (1-2-3-4-0) dan kita bisa menambahkan data pada program Inilah tampilan fitur Tambah Data :<p>
+
+![gambar4](gmbrss/ss4.png.png)
+
+``` pyhton
+def tambah():
+        print("Tambah Data")
+        nama = input("Nama\t\t: ")
+        nim = int(input("NIM\t\t: "))
+        tugas = int(input("Nilai Tugas\t: "))
+        uts = int(input("Nilai UTS\t: "))
+        uas = int(input("Nilai UAS\t: "))
+        nilaiakhir = (tugas * 0.3 + uts * 0.35 + uas * 0.35)
+        data[nama] = nim, tugas, uts, uas, nilaiakhir
 ```
 - Ubah Data <p>
 System akan menjalankan fitur ini ketika pengguna mengetikkan 3 perintah pada pilihan Pilih Menu (1-2-3-4-0)
